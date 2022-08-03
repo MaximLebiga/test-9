@@ -3,7 +3,6 @@ import PizzaChart from "./sections/PizzaChart"
 import TableProducts from "./sections/TableProducts"
 import Pagination from 'react-bootstrap/Pagination'
 import { getProducts } from "../../api"
-import style from "./Main.module.css"
 import { setRange } from "../../utils/setRange"
 
 const step = 10
@@ -29,10 +28,10 @@ const Main = () => {
 
 
   return (
-    <div className={style.content}>
+    <div style={{padding: '30px 15px', display: 'flex', flexDirection: 'column'}}>
       <PizzaChart data={data} />
       <TableProducts data={data} skip={skip} />
-      <Pagination className={style.pagination}>
+      <Pagination style={{alignSelf: 'center'}}>
         <Pagination.Prev
           onClick={handlePrevButtonClick}
           disabled={skip === 0}

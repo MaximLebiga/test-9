@@ -3,6 +3,7 @@ import { Table } from "react-bootstrap"
 const TableProducts = ({
   data,
 }) => {
+  console.log(data)
   return (
     <div>
       <Table striped bordered hover>
@@ -13,6 +14,7 @@ const TableProducts = ({
             <th>Price</th>
             <th>Rating</th>
             <th>Category</th>
+            <th>Thumbnail </th>
           </tr>
         </thead>
         <tbody>
@@ -23,6 +25,7 @@ const TableProducts = ({
               <td>{item.price}</td>
               <td>{item.price}</td>
               <td>{item.category}</td>
+              <td><img alt='thumbnail' src={item.thumbnail} style={{width: '100px'}}/></td>
             </tr>
           ))}
         </tbody>
