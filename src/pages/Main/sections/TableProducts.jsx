@@ -3,7 +3,6 @@ import { Table } from "react-bootstrap"
 const TableProducts = ({
   data,
 }) => {
-  console.log(data)
   return (
     <div>
       <Table striped bordered hover>
