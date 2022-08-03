@@ -1,0 +1,9 @@
+.content {
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination {
+  align-self: center
+}
